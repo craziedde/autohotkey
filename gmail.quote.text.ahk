@@ -1,5 +1,6 @@
-﻿; gmail "quote" selected text
-; hotkey for reply is Escape
+﻿;	t:autohotkey t:script for:
+;	t:gmail "quote" selected text
+;	hotkey for reply is Escape
 
 #If (WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe"))
 Escape::		; hotkey used "Escape key"
@@ -20,7 +21,7 @@ Send {Backspace}	; erase quote in wrong plac
 Send  {return}
 Send {Up}
 Send  {return}		; next line
-Send  ^]		; add tab
+;Send  ^]		; add tab
 clipboard = %save_clipboard%		; restore original clipboard
 return
 #IfWinActive
